@@ -1,0 +1,192 @@
+@font-face {
+  font-family: "History Of Wawa";
+  src: url("./Fonts/History\ of\ Wawa.ttf") format("truetype"); /* Adjust the path according to where you saved the font */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Challenger Clean";
+  src: url("./Fonts/Challenger\ CLEAN\ D.ttf") format("truetype"); /* Adjust the path according to where you saved the font */
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #f4f7f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  width: 100%;
+  max-width: 1000px; /* Max width of the app */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.top-row {
+  width: 100%;
+  background-color: #2092c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.top-row h1 {
+  color: white;
+  font-size: 3rem;
+  font-family: "History Of Wawa", sans-serif;
+}
+
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.left-column,
+.right-column {
+  width: 48%;
+  background-color: rgb(235, 237, 213);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-column {
+  background-color: #e2e4d2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.right-column {
+  background-color: #e2e4d2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  color: #1a566f;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="number"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #2092c4;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #186f9e;
+}
+
+button + button {
+  margin-top: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #1a566f;
+}
+
+ul button {
+  padding: 5px 10px;
+  background-color: #2092c4;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 0.9rem;
+}
+
+ul button:hover {
+  background-color: #186f9e;
+}
+
+.person-outline {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+.progress-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #e2e4d2;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #2092c4;
+  width: 0;
+}
+
+@media (max-width: 768px) {
+  .bottom-row {
+    flex-direction: column;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+}
